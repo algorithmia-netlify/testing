@@ -2,10 +2,11 @@ backend:
   name: test-repo
   repo: algorithmia-netlify/testing
 collections:
-  - name: 'kitchenSink' # all the things in one entry, for documentation and quick testing
-    label: 'Kitchen Sink'
-    folder: '_sink'
+  - name: 'page' # all the things in one entry, for documentation and quick testing
+    label: 'Page'
+    folder: 'pages'
     create: true
+    preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Content'
