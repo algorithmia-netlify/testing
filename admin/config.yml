@@ -1,8 +1,8 @@
 backend:
-  name: test-repo
+  name: github
   repo: algorithmia-netlify/testing
 collections:
-  - name: 'page' # all the things in one entry, for documentation and quick testing
+  - name: 'page'
     label: 'Page'
     folder: 'pages'
     create: true
@@ -20,12 +20,11 @@ collections:
               - { label: 'content', name: 'content', widget: 'markdown' }
           - label: 'Code Sample'
             name: 'code-sample'
-            widget: 'object'
+          widget: 'object'
             fields:
               - { label: 'R', name: 'r', widget: 'text' }
               - { label: 'Javascript', name: 'javascript', widget: 'text' }
               - { label: 'Scala', name: 'scala', widget: 'text' }
               - { label: 'Python', name: 'python', widget: 'text' }
-
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
